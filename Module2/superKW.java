@@ -10,8 +10,10 @@ public class superKW {
 class Student{
     //Data Members or Fields
     public String stuName="Omkar";
+    public int age;
 
-    Student(){
+    Student(int age){
+        this.age=age;
         System.out.println("Student constructor called");
     }
 
@@ -24,7 +26,7 @@ class newStudent extends Student {
     String stuName = "Bhuru";
 
     newStudent(){
-        super();
+        super(age);
         System.out.println("newStudent called");
     }
 
